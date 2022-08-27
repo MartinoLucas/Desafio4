@@ -5,6 +5,8 @@
 	/*background-color: #7bc5c1;*/
 }
 
+/*¡¡AGREGAR ANIMACIONES!!*/
+
 a{
 	list-style-type: none;
 	text-decoration: none;
@@ -15,7 +17,7 @@ a{
 /*HEADER*/
 
 header{
-	background-color: #7bc5c1;
+	background-color: #259c95;
 	height: 100%;
 }
 
@@ -26,6 +28,13 @@ header{
 .nav{
 	text-align: right;
 	margin: 40px;
+}
+
+.nav ul li{
+	transition: transform .3s;
+}
+.nav ul li:hover{
+	transform: translate(0, -5px);
 }
 
 ul li{
@@ -64,15 +73,15 @@ h1{
 /*FOOTER*/
 
 .logoF{
-	background-color: #7bc5c1;
+	/*background-color: #7bc5c1;*/
 	text-align: center;
 }
 .locaF{
-	background-color: #7bc5c1;
+	/*background-color: #7bc5c1;*/
 	text-align: center;
 }
 .copyF{
-	background-color: #7bc5c1;
+	/*background-color: #7bc5c1;*/
 	text-align: center;
 }
 
@@ -86,6 +95,7 @@ h1{
 		"Header"
 		"Main"
 		"Foot";
+	/*min-height: 100vh;*/
 }
 
 .gridH{
@@ -105,7 +115,6 @@ h1{
 	grid-template-rows: auto;
 	grid-template-areas:
 	"logo nav";
-
 }
 
 .gridLogo{
@@ -144,21 +153,26 @@ h1{
 .gridsFoot{
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: 100px 50px 50px;
+	grid-template-rows: auto auto auto;
 	grid-template-areas:
 	"logo"
 	"locacion"
-	"copy"
+	"copy";
+	background: linear-gradient(#7bc5c1 50%, #eab875);
+
 }
 
 .gridLogoF{
 	grid-area: logo;
+	padding: 5px;
 }
 .gridLocacion{
 	grid-area: locacion;
+	padding: 9px;
 }
 .gridCopy{
 	grid-area: copy;
+	padding: 9px;
 }
 
 /*NOSOTROS*/
@@ -202,7 +216,7 @@ h1{
 /*PRODUCTOS*/
 .gridMainP{
 	display: grid;
-	grid-template-colmns: 100%;
+	grid-template-columns: 100%;
 	grid-template-rows: auto auto auto;
 	grid-template-areas:
 	"titlePr"
@@ -245,6 +259,7 @@ h1{
 	background-color: #eab875;
 	text-align: center;
 	font-size: 25px;
+	background: linear-gradient(#eab875, #7bc5c1);
 }
 .divMCt{
 	text-align: center;
