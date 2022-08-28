@@ -17,7 +17,8 @@ a{
 /*HEADER*/
 
 header{
-	background-color: #259c95;
+	background: linear-gradient(#259c95 20%, #7bc5c1);
+	/*background-color: #259c95;*/
 	height: 100%;
 }
 
@@ -214,6 +215,13 @@ h1{
 }
 
 /*PRODUCTOS*/
+
+@keyframes vanishing{
+	0% {opacity: 1;}
+	50%{opacity: 0.7;}
+	100% {opacity: 1;}
+}
+
 .gridMainP{
 	display: grid;
 	grid-template-columns: 100%;
@@ -230,6 +238,10 @@ h1{
 .linksPr{
 	text-align: center;
 	grid-area: links;
+	opacity: 1;
+	animation-name: vanishing;
+	animation-iteration-count: 4;
+	animation-duration: .5s;
 }
 .prs{
 	grid-area: prs;
